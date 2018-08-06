@@ -2,7 +2,7 @@
     "a_galaxy_workflow": "true", 
     "annotation": "", 
     "format-version": "0.1", 
-    "name": "Copy of 'cwl_tools (imported from API)'", 
+    "name": "Copy of 'cwl_tools (imported from API)' (imported from API)", 
     "steps": {
         "0": {
             "annotation": "", 
@@ -19,10 +19,6 @@
             "label": null, 
             "name": "CWL Runner with Download", 
             "outputs": [
-                {
-                    "name": "output", 
-                    "type": "data"
-                }, 
                 {
                     "name": "stdout_output", 
                     "type": "txt"
@@ -45,8 +41,8 @@
             "workflow_outputs": [
                 {
                     "label": null, 
-                    "output_name": "stderr_output", 
-                    "uuid": "254c170c-3e57-4b20-be21-77273bbab38c"
+                    "output_name": "output", 
+                    "uuid": "62d56f67-b1db-44b2-9585-5aaa8e52a246"
                 }, 
                 {
                     "label": null, 
@@ -55,8 +51,8 @@
                 }, 
                 {
                     "label": null, 
-                    "output_name": "output", 
-                    "uuid": "62d56f67-b1db-44b2-9585-5aaa8e52a246"
+                    "output_name": "stderr_output", 
+                    "uuid": "254c170c-3e57-4b20-be21-77273bbab38c"
                 }
             ]
         }, 
