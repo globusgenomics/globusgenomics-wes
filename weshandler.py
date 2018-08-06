@@ -74,8 +74,15 @@ def __get_workflow_details(gi, invocation_id):
                 UUID = dataset_info['uuid'].replace("-", "")
                 file_path = get_filepath(UUID)
                 outputs = __get_file_json(file_path)
+                stdout = None
+                stderr = None
+                for out in outputs['BDbag_files']:
+                    if out['filename'] == 'CWL_run_stdout':
+                        stdout = out['url']
+                    elif out['filename'] == 'CWL_run_stderr':
+                        stderr = out['url']
 
-    workflow_log = { "name": "string", "cmd": [ "string" ], "start_time": invocation["update_time"], "end_time": "string", "stdout": "string", "stderr": "string", "exit_code": 0 }
+    workflow_log = { "name": "string", "cmd": [ "string" ], "start_time": invocation["update_time"], "end_time": "string", "stdout": stdout, "stderr": stderr, "exit_code": 0 }
     return { "outputs" : outputs, "workflow_id" : invocation_id, "state" : history_state, "task_logs": invocation['steps'], "workflow_log" : workflow_log}
 
 def __delete_workflow(gi, invocation_id):
