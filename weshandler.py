@@ -66,6 +66,8 @@ def __get_workflow_details(gi, invocation_id):
     history_state = gi.histories.get_status(invocation['history_id'])['state']
 
     outputs = {}
+    stdout = None
+    stderr = None
     if history_state == 'ok':
         for content in gi.histories.show_history(invocation['history_id'], contents=True):
             if "Minid for history" in content['name'] and content['deleted'] is False:
@@ -74,8 +76,6 @@ def __get_workflow_details(gi, invocation_id):
                 UUID = dataset_info['uuid'].replace("-", "")
                 file_path = get_filepath(UUID)
                 outputs = __get_file_json(file_path)
-                stdout = None
-                stderr = None
                 for out in outputs['BDbag_files']:
                     if out['filename'] == 'CWL_run_stdout':
                         stdout = out['url']
