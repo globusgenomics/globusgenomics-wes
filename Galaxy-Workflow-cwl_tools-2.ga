@@ -2,7 +2,7 @@
     "a_galaxy_workflow": "true", 
     "annotation": "", 
     "format-version": "0.1", 
-    "name": "Copy of 'cwl_tools (imported from API)' (imported from API)", 
+    "name": "cwl_tools", 
     "steps": {
         "0": {
             "annotation": "", 
@@ -30,7 +30,7 @@
             ], 
             "position": {
                 "left": 200, 
-                "top": 370
+                "top": 352
             }, 
             "post_job_actions": {}, 
             "tool_id": "cwl_runner_with_download", 
@@ -93,12 +93,12 @@
                 }
             }, 
             "tool_id": "create_output_bdbag_and_minid2", 
-            "tool_state": "{\"__page__\": null, \"url\": \"\\\"**\\\"\", \"__rerun_remap_job_id__\": null, \"historyid\": \"\\\"**\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"goauth\": \"\\\"**\\\"\", \"userapi\": \"\\\"**\\\"\"}", 
+            "tool_state": "{\"__page__\": null, \"url\": \"\\\"**\\\"\", \"__rerun_remap_job_id__\": null, \"historyid\": \"\\\"**\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"goauth\": \"\\\"**\\\"\", \"userapi\": \"\\\"**\\\"\", \"goauth_token\": \"\\\"**\\\"\"}", 
             "tool_version": "1.0.0", 
             "type": "tool", 
             "uuid": "069a9fb5-f23c-4e93-9ef8-9aa0e9f8ee45", 
             "workflow_outputs": []
         }
     }, 
-    "uuid": "272c2664-5b7e-43d2-9ab9-dedcbab79b02"
+    "uuid": "934175c7-e15a-4b6b-b8c9-6f674c7f0acf"
 }
