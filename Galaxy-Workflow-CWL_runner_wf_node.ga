@@ -1,0 +1,49 @@
+{
+    "a_galaxy_workflow": "true", 
+    "annotation": "", 
+    "format-version": "0.1", 
+    "name": "CWL_runner_wf_node", 
+    "steps": {
+        "0": {
+            "annotation": "", 
+            "content_id": "cwl_runner_with_download_minid_output", 
+            "errors": null, 
+            "id": 0, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool CWL Runner with Download and MINID output", 
+                    "name": "inputs"
+                }
+            ], 
+            "label": null, 
+            "name": "CWL Runner with Download and MINID output", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "stdout_output", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "stderr_output", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 133, 
+                "top": 114.5
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "cwl_runner_with_download_minid_output", 
+            "tool_state": "{\"inputs\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"cwl_file\": \"\\\"\\\"\", \"goauth_token\": \"\\\"**\\\"\", \"__page__\": null}", 
+            "tool_version": "1.0.0", 
+            "type": "tool", 
+            "uuid": "0e15b60b-fa8b-43df-8475-45ea8480456a", 
+            "workflow_outputs": []
+        }
+    }, 
+    "uuid": "003ed7f3-0a27-4c6a-8c62-8c3d8387b172"
+}
