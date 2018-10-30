@@ -13,7 +13,7 @@ lazy==1.3
 MarkupSafe==1.0
 oauthlib==2.1.0
 PyYAML==3.12
-requests==2.19.1
+requests==2.20.0
 requests-oauthlib==1.0.0
 requests-toolbelt==0.8.0
 six==1.11.0
